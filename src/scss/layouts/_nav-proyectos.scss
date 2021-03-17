@@ -1,0 +1,193 @@
+
+.proyectos {
+    background-color: black;
+    align-items: center!important;
+    height: 31vh;
+    transition: all .3s ease;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid gray;
+
+    .opciones-menu-proyectos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+            color: white;
+            margin: 0;
+            width: 100%;
+            span {
+                color: purple;
+            }
+        }
+
+        .barra {
+            display: block;
+            color: white;
+            margin-top: .5rem;
+        }
+    }
+
+
+    @include desktop {
+        display: flex;
+        height: 15vh;
+        .opciones-menu-proyectos {
+            .barra {
+                display: none;
+            }
+        }
+    }
+
+    .links-proyectos {
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: 3.7rem!important;
+        
+        a {
+            display: block;
+            width: 90%!important;
+            margin: 0!important;
+            margin: 0 auto!important;
+            border: 1px solid white;
+            color: white;
+            text-decoration: none;
+            padding: .7rem!important;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: all .3s ease;
+            text-align: center!important;
+            height: 3.5rem!important;
+            line-height: 1.5rem;
+
+            &:hover {
+                background-color: white;
+                color: black;
+
+            }
+
+            @include desktop {
+                width: 70%!important;
+                margin: 0 auto;
+                height: 3rem!important;
+            }
+        }
+
+        @include desktop {
+            width: 15%;
+            margin-top: 0!important;
+        }
+
+    }
+
+    .titulo {
+        width: 100%;
+        text-align: center;
+        h1 {
+            color: white;
+            width: 100%;
+            display: block;
+            margin: 2rem auto;
+        }
+    }
+
+}
+
+.mostrar-menu {
+    height: 45vh!important;
+}
+
+.carousel {
+    height: 80vh;
+}
+
+.carousel .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    height: 60vh;
+    width: 80vw;
+
+    @include desktop {
+        width: 50vw;
+    }
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.carousel .indicators {
+    bottom: 30px!important;
+}
+
+.carousel .indicators .indicator-item {
+    border-radius: 0!important;
+    transform: rotate(45deg)!important;
+    margin: 0 15px;
+    background: black!important;
+}
+
+.carousel .indicators .indicator-item.active {
+    background-color: rgb(109, 15, 86)!important;
+}
+
+.titulo-carousel {
+    background-color: black;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    h4 {
+        margin: 0;
+        flex: 3;
+        margin-left: 2rem;
+        font-size: 1.2rem;
+        margin-right: .8rem;
+
+        @include desktop {
+            margin-left: 4rem;
+            font-size: 2rem;
+            margin-right: 0;
+        }
+
+    }
+
+    a {
+        flex: 1;
+        .github {
+            color: white;
+            font-size: 1.3rem;
+            margin-right: .8rem;
+        }
+        span {
+            font-size: 1.5rem;
+        }
+
+        @include desktop {
+            .github {
+                font-size: 2rem;
+                margin-right: 0;
+            }
+            span {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.fijar-menu {
+    position: fixed;
+    top: 0;
+}

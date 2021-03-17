@@ -1,0 +1,241 @@
+
+nav {
+    position: fixed;
+    width: 100%;
+    transition: all .4s ease;
+    z-index: 1;
+
+    h1 {
+        border: 1px solid black;
+        color: black;
+        padding: 1rem 1rem;
+        border-radius: 15px;
+        text-align: center;
+
+        span {
+            color: white;
+        }
+    }
+
+    .barra {
+        cursor: pointer;
+    }
+
+    .links {
+        list-style: none;
+    }
+
+    @include telefono {
+        
+        h1 {
+            margin: 2rem 1rem;
+        }
+
+        .opciones-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .barra {
+            font-size: 3rem;
+            color: black;
+            margin-right: 3rem;
+        }
+
+        .links {
+            background-color: black;
+            color: white;
+            height: 100vh;
+            width: 0vw;
+            top: 0;
+            position: absolute;
+            overflow: hidden;
+            transition: all .4s ease;
+            z-index: 1;
+
+            .close {
+                position: absolute;
+                right: 0;
+                margin: 1rem 1rem;
+                font-size: 2rem;
+            }
+
+            li, a {
+                width: 70%;
+                border: 1px solid white;
+                border-radius: 20px;
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 1rem;
+                padding: 1rem 2rem;
+                transition: all .3s ease;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                    cursor: pointer;
+                }
+
+            }
+
+            .first {
+                margin-top: 8rem!important;
+            }
+        }
+    }
+
+    @include tablet {
+        .barra {
+            color: white;
+        }
+    }
+
+    @include desktop {
+
+        .contenido {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem ;
+        }
+
+        h1 {
+            padding: .5rem 1rem;
+            margin: 0;
+        }
+
+        .barra {
+            display: none;
+        }
+
+        .links {
+            width: 60%;
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            height: 5%;
+
+            .close {
+                display: none;
+            }
+
+            li, a {
+                background-color: black;
+                color: white;
+                padding: 0;
+                height: 10%;
+                width: 10%;
+                padding: .8rem;
+                text-decoration: none;
+            }
+
+            .first {
+                margin-top: 0!important;
+            }
+        }
+    }
+
+}
+
+#links.mostrar {
+    width: 100vw;
+}
+
+#links.ocultar {
+    width: 0vw;
+}
+
+.contenedor-principal {
+
+    display: flex;
+    background-image: url(../../src/img/fondoPortafolioOficial.jpg);
+    height: 100vh;      
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    .contenido-header {
+        p {
+            margin: 0;
+        }
+
+        .texto3 {
+
+            .typed {
+                color: white;
+            }
+        }
+
+    }
+
+    @include telefono {
+        .contenido-header {
+
+            margin: 15rem 1rem;
+            font-weight: $black;
+            
+            .texto1 {
+                font-size: 2rem;
+            }
+    
+            .texto2 {
+                font-size: 3rem;
+            }
+    
+            .texto3 {
+                font-size: 2rem;
+            }
+    
+        
+        }
+    }
+
+    @include tablet {
+        .contenido-header {
+            margin: 21rem 1rem;
+    
+        }
+    }
+    
+    @include desktop {
+        .contenido-header {
+
+            margin: 23rem 5rem;
+            font-weight: $black;
+
+            .texto1 {
+                font-size: 2.75rem;
+            }
+    
+            .texto2 {
+                font-size: 4rem;
+            }
+    
+            .texto3 {
+                font-size: 3rem;
+            }
+    
+        
+        }
+    }
+}
+
+.colorFondo {
+    background-color: black;
+
+    h1 {
+        color: white;
+    }
+
+    span {
+        color: rgb(150, 40, 150);
+    }
+
+    .barra {
+        color: white;
+    }
+}

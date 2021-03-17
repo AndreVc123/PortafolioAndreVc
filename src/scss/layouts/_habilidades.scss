@@ -1,0 +1,307 @@
+
+.habilidades {
+
+    font-family: $fuentePrincipal;
+
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: $black
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        font-weight: $black
+    }
+}
+
+.divisiones {
+
+    @include telefono {
+        @include grid(1,0);
+    }
+
+    @include tablet {
+        @include grid(2, 2rem);
+    }
+
+}
+
+.lenguaje {
+    width: 100%;
+}
+
+.angular {
+    width: 100%;
+    height: 25px;
+    background-color: rgb(206, 197, 197);
+    border-radius: 20px;
+    
+    .angular-progress {
+        width: 75%;
+        height: 25px;
+        background-color: red;
+        border-radius: 10px;
+        text-align: center;
+        overflow: hidden;
+
+        p {
+            margin: 0;
+            margin-top: .1rem;
+            color: white;
+            font-weight: $black;
+            font-size: 1.3rem;
+        }
+    }
+
+}
+
+.react {
+
+    width: 100%;
+    height: 25px;
+    background-color: rgb(206, 197, 197);
+    border-radius: 20px;
+
+    .react-progress {
+        width: 50%;
+        height: 25px;
+        background-color: blue;
+        border-radius: 10px;
+        text-align: center;
+        overflow: hidden;
+
+        p {
+            margin: 0;
+            margin-top: .1rem;
+            color: white;
+            font-weight: $black;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.javascript {
+
+    width: 100%;
+    height: 25px;
+    background-color: rgb(206, 197, 197);
+    border-radius: 20px;
+
+    .javascript-progress {
+        width: 60%;
+        height: 25px;
+        background-color: rgb(241, 238, 25);
+        border-radius: 10px;
+        text-align: center;
+        overflow: hidden;
+
+        p {
+            margin: 0;
+            margin-top: .1rem;
+            color: white;
+            font-weight: $black;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.php {
+
+    width: 100%;
+    height: 25px;
+    background-color: rgb(206, 197, 197);
+    border-radius: 20px;
+
+    .php-progress {
+        width: 40%;
+        height: 25px;
+        background-color: rgb(114, 52, 196);
+        border-radius: 10px;
+        text-align: center;
+        overflow: hidden;
+
+        p {
+            margin: 0;
+            margin-top: .1rem;
+            color: white;
+            font-weight: $black;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.mongo {
+
+    width: 100%;
+    height: 25px;
+    background-color: rgb(206, 197, 197);
+    border-radius: 20px;
+
+    .mongo-progress {
+        width: 75%;
+        height: 25px;
+        background-color: rgb(70, 206, 93);
+        border-radius: 10px;
+        text-align: center;
+        overflow: hidden;
+
+        p {
+            margin: 0;
+            margin-top: .1rem;
+            color: white;
+            font-weight: $black;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.node {
+
+    width: 100%;
+    height: 25px;
+    background-color: rgb(206, 197, 197);
+    border-radius: 20px;
+
+    .node-progress {
+        width: 75%;
+        height: 25px;
+        background-color: rgb(73, 199, 23);
+        border-radius: 10px;
+        text-align: center;
+        overflow: hidden;
+
+        p {
+            margin: 0;
+            margin-top: .1rem;
+            color: white;
+            font-weight: $black;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.reactn {
+
+    width: 100%;
+    height: 25px;
+    background-color: rgb(206, 197, 197);
+    border-radius: 20px;
+
+    .reactn-progress {
+        width: 60%;
+        height: 25px;
+        background-color: blue;
+        border-radius: 10px;
+        text-align: center;
+        overflow: hidden;
+
+        p {
+            margin: 0;
+            margin-top: .1rem;
+            color: white;
+            font-weight: $black;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.sass {
+
+    width: 100%;
+    height: 25px;
+    background-color: rgb(206, 197, 197);
+    border-radius: 20px;
+
+    .sass-progress {
+        width: 75%;
+        height: 25px;
+        background-color: rgb(194, 33, 81);
+        border-radius: 10px;
+        text-align: center;
+        overflow: hidden;
+
+        p {
+            margin: 0;
+            margin-top: .1rem;
+            color: white;
+            font-weight: $black;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.html {
+
+    width: 100%;
+    height: 25px;
+    background-color: rgb(206, 197, 197);
+    border-radius: 20px;
+
+    .html-progress {
+        width: 100%;
+        height: 25px;
+        background-color: orangered;
+        border-radius: 10px;
+        text-align: center;
+        overflow: hidden;
+
+        p {
+            margin: 0;
+            margin-top: .1rem;
+            color: white;
+            font-weight: $black;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.css {
+
+    width: 100%;
+    height: 25px;
+    background-color: rgb(206, 197, 197);
+    border-radius: 20px;
+
+    .css-progress {
+        width: 85%;
+        height: 25px;
+        background-color: rgb(61, 124, 218);
+        border-radius: 10px;
+        text-align: center;
+        overflow: hidden;
+
+        p {
+            margin: 0;
+            margin-top: .1rem;
+            color: white;
+            font-weight: $black;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.mysql {
+
+    width: 100%;
+    height: 25px;
+    background-color: rgb(206, 197, 197);
+    border-radius: 20px;
+
+    .mysql-progress {
+        width: 50%;
+        height: 25px;
+        background-color: blue;
+        border-radius: 10px;
+        text-align: center;
+        overflow: hidden;
+
+        p {
+            margin: 0;
+            margin-top: .1rem;
+            color: white;
+            font-weight: $black;
+            font-size: 1.3rem;
+        }
+    }
+}

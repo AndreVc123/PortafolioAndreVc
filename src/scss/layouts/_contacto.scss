@@ -1,0 +1,108 @@
+.redes {
+    background-color: black;
+    overflow: hidden;
+    font-family: $fuentePrincipal;
+    font-weight: $black;
+
+    h2 {
+        color: white;
+        text-align: center;
+        font-size: 3.5rem;
+        margin: 0;
+        margin: .5rem 0;
+    }
+
+    @include telefono {
+
+        height: 90vh;
+
+        .separador {
+            display: block;
+            width: 100%;
+            margin: 3rem auto;
+        }
+
+        .contenedor-interno {
+            width: 100%;
+            padding: 0 1rem;
+        }
+    }
+
+    @include tablet{
+        height: 60vh;
+
+        .separador {
+            display: flex;
+            width: 60%;
+            margin: 3rem auto;
+        }
+
+        .contenedor-interno {
+            width: 80%;
+        }
+    }
+
+    @include desktop{
+        height: 60vh;
+    }
+}
+
+.redes-contacto {
+
+    display: block;
+
+    img {
+        width: 12%;
+        height: 12%;
+    }
+
+    a {
+        color: white;
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .posicion {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+}
+
+.datos-personales {
+    display: block;
+    align-items: flex-start;
+
+    img {
+        width: 12%;
+        height: 12%;
+    }
+
+    p {
+        color: white;
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        margin: 0 0 1rem 1rem;
+
+    }
+
+    .separador {
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        display: flex;
+    }
+
+    @include desktop {
+        .separador {
+            margin-bottom: 2rem;
+        }
+    }
+
+}

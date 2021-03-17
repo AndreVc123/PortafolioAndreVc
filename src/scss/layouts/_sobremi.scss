@@ -1,0 +1,103 @@
+.contenedor-datos {
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: $black;
+
+    }
+
+}
+
+.contenedor-interno {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.contenedor-informacion {
+    .imagen-informacion {
+        background-image: url(../../src/img/perfil.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 1rem;
+    }
+
+    @include telefono {
+
+        & {
+            display: block;
+        }
+
+        .imagen-informacion {
+            width: 80%;
+            height: 250px;
+            margin: 0 auto;
+        }
+
+        .informacion {
+            display: block;
+            padding: 0;
+            width: 100%;
+        }
+
+    }
+
+    @include tablet {
+        & {
+            display: flex;
+            justify-content: space-between;
+        
+        }
+
+        .imagen-informacion {
+            width: 60%;
+            height: 250px;
+            margin-right: 2rem;
+        }
+    }
+
+    @include desktop {
+
+        .informacion {
+            flex: 2;
+            padding: 2rem 1.5rem;
+    
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .imagen-informacion {
+            flex: 1;
+            margin-right: 3rem;
+            height: 400px;
+        }
+    }
+}
+
+
+.contenedor-informacion {
+    .informacion {
+        .sobremi {
+            text-align: justify;
+        }
+    
+        .seguir {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .seguir_iconos {
+            text-align: center;
+            font-size: 1.8rem;
+
+            a{
+                i{
+                    color: black;
+                    margin-right: .7rem;
+                }
+            }
+        }
+    }
+}

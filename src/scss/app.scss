@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100;200;300;400;500;600;900&display=swap');
+
+//Base
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
+
+//Layouts
+@import 'layouts/nav';
+@import 'layouts/contacto';
+@import 'layouts/sobremi';
+@import 'layouts/servicios';
+@import 'layouts/habilidades';
+@import 'layouts/nav-proyectos';
